@@ -1,0 +1,30 @@
+@import '../../styles/variables.css';
+
+.btn-yellow-rounded {
+  background-color: var(--amarelo-suave);
+  color: var(--cinza-escuro);
+  border-radius: 60px;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  font-size: 20px;
+}
+
+.btn-yellow-rounded:hover {
+  background-color: var(--amarelo-suave-sombreado);
+  color: var(--cinza-escuro-sombreado);
+}
+
+.btn-blue-semi-rounded {
+  padding-block: 6px;
+  background-color: var(--azul-escuro);
+  color: var(--branco-escurecido);
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  font-size: 20px;
+  width: 90%;
+
+}
+

@@ -1,0 +1,27 @@
+@import '../../styles/variables.css';
+
+.footer {
+  margin-top: var(--margin-top-maxima);
+  background-color: var(--cinza-escuro);
+  padding-block: var(--margin-top-aumentada);
+  padding-inline: 2.5%;
+  color: var(--branco-escurecido);
+}
+
+.footer-content {
+  max-width: var(--max-width-page);
+  margin: auto;
+  text-align: center;
+}
+
+.footer-text {
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+.footer-divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--cinza-neutro);
+  margin-block: var(--margin-top-padrao);
+}

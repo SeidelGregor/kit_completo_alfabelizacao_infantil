@@ -1,0 +1,62 @@
+@import '../../styles/variables.css';
+
+.content {
+  max-width: var(--max-width-page);
+  width: 100%;
+  margin-top: 1%;
+  margin-inline: auto;
+  padding-inline: 2.5%;
+}
+
+.margem-minima {
+  margin-top: var(--margin-top-minima);
+}
+
+.margem-reduzida {
+  margin-top: var(--margin-top-reduzida);
+}
+
+.margem-padrao {
+  margin-top: var(--margin-top-padrao);
+}
+
+.margem-aumentada {
+  margin-top: var(--margin-top-aumentada);
+}
+
+.margem-maxima {
+  margin-top: var(--margin-top-maxima);
+}
+
+.coluna {
+  flex-direction: column;
+}
+
+.linha {
+  flex-direction: row;
+}
+
+.centralizado {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 280px) {
+  .content {
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 810px) {
+  .content {
+    margin-top: 10%;
+  }
+}

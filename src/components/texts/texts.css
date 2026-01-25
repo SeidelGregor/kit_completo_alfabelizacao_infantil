@@ -1,0 +1,64 @@
+@import '../../styles/variables.css';
+
+.titulo-grande{
+  font-weight: 900;
+  font-size: 38px;
+  letter-spacing: 0.2px;
+}
+
+.titulo{
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0.0px;
+}
+
+.titulo-pequeno {
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.0px;
+}
+
+.texto-centralizado {
+  text-align: center;
+}
+
+.letra-clara {
+  color: var(--cinza-escuro);
+}
+
+.letra-escura {
+  color: var(--preto);
+}
+
+.texto-em-destaque {
+  color: var(--azul-escuro);
+}
+
+.texto-simples {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  word-spacing: 0.5px;
+  line-height: 1.3;
+  font-weight: 200;
+}
+
+.letra-pequena {
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  word-spacing: 0.05px;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.letra-muito-pequena {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  letter-spacing: -0.5px;
+  line-height: 0.8;
+  font-weight: 100;
+}
+
+.texto-riscado {
+  text-decoration: line-through;
+}
+

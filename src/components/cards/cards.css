@@ -1,0 +1,180 @@
+@import '../../styles/variables.css';
+
+.card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: var(--branco);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.300);
+  display: flex;
+  border: none;
+}
+
+.sub-card {
+  padding-inline: 5%;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: var(--verde-menta);
+  border: 1px solid var(--verde-escuro);
+}
+
+.sub-card p {
+  color: var(--cinza-escuro);
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  word-spacing: 0.05px;
+  line-height: 1.1;
+  font-weight: 100;
+}
+
+.sub-card h2 {
+  color: var(--preto);
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  word-spacing: 0.05px;
+  font-weight: 900;
+}
+
+.card-header {
+  height: 160px;
+  background-color: var(--verde-menta);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header img {
+  width: auto;
+  max-height: 150%;
+}
+
+.card-content {
+  margin-inline: 2.5%;
+  margin-bottom: var(--margin-top-padrao);
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-inline: 2.5%;
+  margin-top: var(--margin-top-minima);
+  margin-bottom: var(--margin-top-minima);
+}
+.icon-text p {
+  margin: 0;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.offer-card{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10%;
+  background-color: var(--branco);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  padding-bottom: var(--margin-top-padrao);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.300);
+}
+
+.offer-header{
+  width: 100%;
+  padding-block: var(--margin-top-padrao);
+  background-color: var(--azul-escuro);
+  color: var(--branco-escurecido);
+}
+
+.offer-header h2 {
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+.offer-header p {
+  font-weight: 100;
+  font-size: 18px;
+  letter-spacing: 0.0px;
+}
+
+.offer-body {
+  padding-block: var(--margin-top-padrao);
+  padding-inline: 2.5%;
+  color: var(--cinza-escuro);
+}
+
+.price {
+  align-items: baseline;
+  gap: 4px;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--azul-escuro);
+}
+
+.benefits {
+  text-align: left;
+  list-style: none;
+  margin-inline: 5%;
+}
+
+.benefits li {
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.offer-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-inline: 7.5%;
+}
+
+.faq-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding-block: var(--margin-top-reduzida);
+  padding-inline: 2.5%;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--cinza-escuro);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+/* Ícone */
+.faq-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Conteúdo */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  padding-inline: 2.5%;
+  transition: max-height 0.1s ease, padding 0.1s ease;
+}
+
+
+
+.card.active .faq-content {
+  max-height: 200px;
+  padding: 0 20px 18px;
+}
+
+.card.active .faq-icon {
+  transform: rotate(180deg);
+}
