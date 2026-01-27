@@ -25,3 +25,18 @@
   background-color: var(--cinza-neutro);
   margin-block: var(--margin-top-padrao);
 }
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--branco-escurecido);
+}
+
+.icon-contato {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
