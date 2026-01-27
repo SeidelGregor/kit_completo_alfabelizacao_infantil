@@ -6,6 +6,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/kit_completo_alfabelizacao_infantil/',
     clean: true
   },
   devServer: {
