@@ -1,6 +1,16 @@
 import './cards.css';
 import '../texts/texts.css'
-
+import { formatarNumero } from '../../utils'
+function mensagemPromocaoCalculada(mensagem, valorInicial, valorFinal){
+  return `
+    <p class="letra-pequena texto-riscado">De R$ ${formatarNumero(valorInicial)}</p>
+    <div class="price margem-minima">
+      <span class="letra-pequena">R$</span>
+      <span class="value">${formatarNumero(valorFinal)}</span>
+    </div>
+    <p class="letra-pequena">${mensagem}</p>
+  `
+}
 export function Offer() {
   return `
     <div class="offer-card coluna margem-maxima" id="offer-card">
@@ -10,14 +20,7 @@ export function Offer() {
       </div>
 
       <div class="offer-body coluna">
-        <p class="letra-pequena texto-riscado">De R$ 379,00</p>
-
-        <div class="price margem-minima">
-          <span class="letra-pequena">R$</span>
-          <span class="value">37,90</span>
-        </div>
-
-        <p class="letra-pequena">Pagamento único</p>
+        ${mensagemPromocaoCalculada('Promoção válida até dia 28 de Fevereiro', 89.9, 19.9)}
 
         <ul class="benefits margem-padrao">
           <li>📥 Material digital (PDF + Editável)</li>
